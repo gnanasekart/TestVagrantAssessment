@@ -1,0 +1,94 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1671703567.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"name",
+		"location",
+		"player"
+	],
+	"properties": {
+		"name": {
+			"$id": "#root/name", 
+			"title": "Name", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"Royal Challengers Bangalore"
+			],
+			"pattern": "^.*$"
+		},
+		"location": {
+			"$id": "#root/location", 
+			"title": "Location", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"Bangalore"
+			],
+			"pattern": "^.*$"
+		},
+		"player": {
+			"$id": "#root/player", 
+			"title": "Player", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/player/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"name",
+					"country",
+					"role",
+					"price-in-crores"
+				],
+				"properties": {
+					"name": {
+						"$id": "#root/player/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Faf Du Plessis"
+						],
+						"pattern": "^.*$"
+					},
+					"country": {
+						"$id": "#root/player/items/country", 
+						"title": "Country", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"South Africa"
+						],
+						"pattern": "^.*$"
+					},
+					"role": {
+						"$id": "#root/player/items/role", 
+						"title": "Role", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Batsman"
+						],
+						"pattern": "^.*$"
+					},
+					"price-in-crores": {
+						"$id": "#root/player/items/price-in-crores", 
+						"title": "Price-in-crores", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"7"
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		}
+	}
+}
