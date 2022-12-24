@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="937d912f-8b1e-4acd-b57c-b13c549070e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Schema/player_Name_Schema.json" afterDir="false" />
+    <list default="true" id="937d912f-8b1e-4acd-b57c-b13c549070e5" name="Changes" comment="Added Utils, POJO, resources files">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/testvg/POJO_Data/TeamDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Direct_Validation_Approach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/testvg/Utils/tes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/path.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Payload_file/players_name.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Payload_file/players_name.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Schema/player_Name_Schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/POJO_Data/players_Details.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/POJO_Data/team_Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testvg/POJO_Data/team_Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/Utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testvg/Utils/TestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +56,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/studies and document/TestVagrantAssessment"
   }
 }]]></component>
@@ -58,6 +64,89 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\studies and document\TestVagrantAssessment\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate the team have atleast one wicket keeper">
+    <configuration name="Direct_Validation_Approach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.testvg.StepDefinitions.Direct_Validation_Approach" />
+      <module name="TestVagantAssessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.testvg.StepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate the player details without null value" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" />
+      <option name="GLUE" value="org.testvg.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestVagantAssessment" />
+      <option name="NAME_FILTER" value="^Validate the player details without null value$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate the player details without null value$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate the player details without null value" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate the team have atleast one wicket keeper" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" />
+      <option name="GLUE" value="org.testvg.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestVagantAssessment" />
+      <option name="NAME_FILTER" value="^Validate the team have atleast one wicket keeper$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate the team have atleast one wicket keeper$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate the team have atleast one wicket keeper" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate the team player has four foreign player" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" />
+      <option name="GLUE" value="org.testvg.StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TestVagantAssessment" />
+      <option name="NAME_FILTER" value="^Validate the team player has four foreign player$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate the team player has four foreign player$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate the team player has four foreign player" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate the team have atleast one wicket keeper" />
+        <item itemvalue="Cucumber Java.Scenario: Validate the team player has four foreign player" />
+        <item itemvalue="Application.Direct_Validation_Approach" />
+        <item itemvalue="Cucumber Java.Scenario: Validate the player details without null value" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,9 +157,35 @@
       <option name="presentableId" value="Default" />
       <updated>1671382114556</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Utils, POJO, resources files">
+      <created>1671711355079</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671711355079</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added Utils, POJO, resources files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Utils, POJO, resources files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

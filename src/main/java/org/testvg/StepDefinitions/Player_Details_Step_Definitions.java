@@ -1,19 +1,61 @@
 package org.testvg.StepDefinitions;
 
 import io.cucumber.java.en.Given;
+import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.testng.Assert;
 import org.testvg.Utils.TestUtils;
 
+import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class Player_Details_Step_Definitions {
 
-    @Given("verify the schema validation for given {string} file")
-    public void verifySchemaValiationForGivenInputFile(String playerFile) throws IOException {
+    @Given("the verified json should {int} foreign player for the given {string} file")
+    public void verifySchemaValiationForGivenInputFile(int playerCount, String playerFile) throws IOException {
 
-            JSONObject jsonObject = TestUtils.getJsonObject("/src/main/resources/Payload_file/players_name.json");
+        int foreignPlayerCount = 0;
+        try {
+            Object parser = new JSONParser().parse(new FileReader("src/main/resources/Payload_file/" + playerFile + ".json"));
+            JSONObject object = TestUtils.getJsonObject(parser.toString());
+            JSONArray jarray = object.getJSONArray("player");
 
+            for (int i = 0; i < jarray.length(); i++) {
+                String countryName = jarray.getJSONObject(i).getString("country");
+                if (!countryName.equalsIgnoreCase("India"))
+                    foreignPlayerCount++;
+            }
+            System.out.println(foreignPlayerCount);
+            Assert.assertEquals(foreignPlayerCount, playerCount);
+        } catch (IOException io) {
+            io.printStackTrace();
+        } catch (ParseException pe) {
+            pe.printStackTrace();
+        }
+    }
+
+
+    @Given("the verified json should have {int} wicket keeper in the team")
+    public void verifyTeamHaveOneWicketKeeper(int keeperCount) throws IOException {
+
+        int wicketkeeperCount = 0;
+        try {
+            Object parser = new JSONParser().parse(new FileReader("src/main/resources/Payload_file/players_name.json"));
+            JSONObject object = TestUtils.getJsonObject(parser.toString());
+            JSONArray jarray = object.getJSONArray("player");
+
+            for (int i = 0; i < jarray.length(); i++) {
+                String playerRole = jarray.getJSONObject(i).getString("role");
+                if (playerRole.equalsIgnoreCase("Wicket-keeper"))
+                    wicketkeeperCount++;
+            }
+            Assert.assertEquals(wicketkeeperCount, keeperCount);
+        } catch (IOException io) {
+            io.printStackTrace();
+        } catch (ParseException pe) {
+            pe.printStackTrace();
+        }
     }
 }
