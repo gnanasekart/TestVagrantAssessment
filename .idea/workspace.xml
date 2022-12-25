@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937d912f-8b1e-4acd-b57c-b13c549070e5" name="Changes" comment="Added Utils, POJO, resources files">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/POJO_Data/TeamDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/POJO_Data/team_Details.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Direct_Validation_Approach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testvg/StepDefinitions/Player_Details_Step_Definitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/Utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testvg/Utils/TestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/Utils/tes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Features/RCB_Team_Player_Details.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testvg/testRunner/Step_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testvg/testRunner/Step_Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Schema/player_Name_Schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/path.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <recent name="C:\studies and document\TestVagrantAssessment\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Validate the team player has four foreign player">
+  <component name="RunManager" selected="JUnit.Step_Runner">
     <configuration name="Direct_Validation_Approach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.testvg.StepDefinitions.Direct_Validation_Approach" />
       <module name="TestVagantAssessment" />
@@ -135,8 +135,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Step_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestVagantAssessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.testvg.testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.testvg.testRunner" />
+      <option name="MAIN_CLASS_NAME" value="org.testvg.testRunner.Step_Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Step_Runner" />
         <item itemvalue="Cucumber Java.Scenario: Validate the team player has four foreign player" />
         <item itemvalue="Cucumber Java.Scenario: Validate the team have atleast one wicket keeper" />
         <item itemvalue="Application.Direct_Validation_Approach" />
