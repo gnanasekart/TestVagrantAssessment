@@ -13,8 +13,8 @@ import java.io.IOException;
 
 public class Player_Details_Step_Definitions {
 
-    @Given("the verified json should {int} foreign player for the given {string} file")
-    public void verifySchemaValiationForGivenInputFile(int playerCount, String playerFile) throws IOException {
+    @Given("the verified json should have {int} foreign player for the given {string} file")
+    public void verifySchemaValiationForGivenInputFile(int playerCount, String playerFile){
 
         int foreignPlayerCount = 0;
         try {
@@ -27,7 +27,6 @@ public class Player_Details_Step_Definitions {
                 if (!countryName.equalsIgnoreCase("India"))
                     foreignPlayerCount++;
             }
-            System.out.println(foreignPlayerCount);
             Assert.assertEquals(foreignPlayerCount, playerCount);
         } catch (IOException io) {
             io.printStackTrace();
@@ -38,7 +37,7 @@ public class Player_Details_Step_Definitions {
 
 
     @Given("the verified json should have {int} wicket keeper in the team")
-    public void verifyTeamHaveOneWicketKeeper(int keeperCount) throws IOException {
+    public void verifyTeamHaveOneWicketKeeper(int keeperCount) {
 
         int wicketkeeperCount = 0;
         try {
