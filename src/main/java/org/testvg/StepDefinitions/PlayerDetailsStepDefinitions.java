@@ -5,13 +5,13 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.testng.Assert;
+import org.junit.Assert;
 import org.testvg.Utils.TestUtils;
 
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Player_Details_Step_Definitions {
+public class PlayerDetailsStepDefinitions {
 
     @Given("the verified json should have {int} foreign player for the given {string} file")
     public void verifySchemaValiationForGivenInputFile(int playerCount, String playerFile){

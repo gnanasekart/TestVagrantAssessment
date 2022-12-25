@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
         "src/main/resources/Features/RCB_Team_Player_Details.feature"},
         glue = {"org.testvg.StepDefinitions"},
         plugin = {"pretty", "json:target/cucumber-reports/Cucumber.json"})
-public class Step_Runner {
+public class StepRunner {
 }
